@@ -27,15 +27,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
-            </ul>
-        </div>
-        <div>
+
+        <li class="nav-item">
             <form action="includes/login.inc.php" method="post">
                 <input type="text" name="mailuid" placeholder="username/email...">
                 <input type="password" name="pwd" placeholder="password...">
                 <button type="submit" name="login-submit">Login</button>
             </form>
+        </li>
+        <li class="nav-item">
             <a href="signup.php">Signup!</a>
+        </li>
+            </ul>
         </div>
         <form action="includes/logout.inc.php" method="post">
             <button type="submit" name="logout-submit">Logout</button>
