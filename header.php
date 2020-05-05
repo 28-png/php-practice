@@ -32,7 +32,7 @@
         <div>
             <form action="includes/login.inc.php" method="post">
                 <input type="text" name="mailuid" placeholder="username/email...">
-
+                <input type="password" name="pwd" placeholder="password...">
             </form>
         </div>
     </nav>
