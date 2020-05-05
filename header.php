@@ -35,7 +35,7 @@
                 <button type="submit" name="login-submit">Login</button>
             </form>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ml-3">
             <a href="signup.php">Signup!</a>
         </li>
             </ul>
