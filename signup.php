@@ -11,7 +11,7 @@ require "header.php";
         <input type="text" name="mail" placeholder="Email">
         <input type="password" name="pwd" placeholder="Password">
         <input type="password" name="pwd-repeat" placeholder="Re-enter password">
-
+        <button type="submit" name="signup-submit">Signup</button>
     </form>
 </main>
 
