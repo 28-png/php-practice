@@ -33,6 +33,7 @@
             <form action="includes/login.inc.php" method="post">
                 <input type="text" name="mailuid" placeholder="username/email...">
                 <input type="password" name="pwd" placeholder="password...">
+                <button type="submit" name="login-submit">Login</button>
             </form>
         </div>
     </nav>
