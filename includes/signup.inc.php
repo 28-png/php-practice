@@ -19,4 +19,9 @@ else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit();
 }
 
+else if(!filter_var(!preg_filter("/^[a-zA-Z0-9]*$/", $username))) {
+    header("Location: ../signup.php?error=invaliduid&mail=".$email);
+    exit();
+}
+
 }
