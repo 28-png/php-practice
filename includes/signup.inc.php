@@ -43,6 +43,7 @@ else {
 
     else {
         mysqli_stmt_bind_param($stmt, "s", $username);
+        mysqli_stmt_execute($stmt);
 
     }
 }
