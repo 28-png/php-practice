@@ -11,6 +11,7 @@ $passwordRepeat = $_POST['pwd-repeat'];
 
 if(empty($username) || empty($email) || empty($password) || $passwordRepeat) {
 header("Location: ../signup.php?error=emptyFields&uid=".$username."&mail=".$email);
+exit();
 }
 
 }
