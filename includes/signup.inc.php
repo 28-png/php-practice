@@ -14,4 +14,9 @@ header("Location: ../signup.php?error=emptyFields&uid=".$username."&mail=".$emai
 exit();
 }
 
+else if() {
+    header("Location: ../signup.php?error=invalidmail&uid=".$username);
+    exit();
+}
+
 }
