@@ -40,6 +40,11 @@ else {
         header("Location: ../signup.php?error=sqlerror");
         exit();
     }
+
+    else {
+        mysqli_stmt_bind_param($stmt, "s", $username);
+
+    }
 }
 
 }
