@@ -44,7 +44,8 @@ else {
     else {
         mysqli_stmt_bind_param($stmt, "s", $username);
         mysqli_stmt_execute($stmt);
-
+        mysqli_stmt_store_result($stmt);
+        $resultCheck = mysqli_stmt_num_rows($stmt);
     }
 }
 
