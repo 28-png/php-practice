@@ -35,7 +35,7 @@ else if($password !== $passwordRepeat) {
 
 else {
     $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
-    $stmt = mysqli_stmt_init();
+    $stmt = mysqli_stmt_init($conn);
 }
 
 }
