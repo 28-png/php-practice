@@ -50,6 +50,10 @@ else {
             header("Location: ../signup.php?error=usertaken&mail=".$email);
             exit();
         }
+
+        else {
+            $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+        }
     }
 }
 
