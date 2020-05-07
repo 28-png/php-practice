@@ -71,4 +71,6 @@ else {
     }
 }
 
+mysqli_stmt_close();
+
 }
