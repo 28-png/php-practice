@@ -53,6 +53,16 @@ else {
 
         else {
             $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+            mysqli_stmt_init($conn);
+            if(!mysqli_stmt_prepare($stmt, $sql)) {
+                header("Location: ../signup.php?error=sqlerror");
+                exit();
+            }
+
+            else {
+
+
+            }
         }
     }
 }
