@@ -64,7 +64,8 @@ else {
 
                 mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashpwd);
                 mysqli_stmt_execute($stmt);
-
+                header("Location: ../signup.php?signup=success");
+                exit();
             }
         }
     }
