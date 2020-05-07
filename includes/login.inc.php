@@ -21,6 +21,8 @@ if(isset($_POST['login-submit'])) {
     }
 
     else {
+    mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid);
+    mysqli_stmt_execute($stmt);
 
 
     }
