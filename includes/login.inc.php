@@ -12,7 +12,12 @@ if(isset($_POST['login-submit'])) {
     }
 
     else {
+    $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
+    $stmt = mysqli_stmt_init($conn);
 
+    if() {
+
+    }
 
     }
 
