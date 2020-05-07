@@ -71,6 +71,13 @@ else {
     }
 }
 
-mysqli_stmt_close();
+    mysqli_stmt_close($stmt);
+    mysqli_close($conn);
+
+}
+
+else {
+    header("Location: ../signup.php");
+    exit();
 
 }
