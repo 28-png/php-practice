@@ -64,7 +64,6 @@ else {
 
                 mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashpwd);
                 mysqli_stmt_execute($stmt);
-                mysqli_stmt_store_result($stmt);
 
             }
         }
