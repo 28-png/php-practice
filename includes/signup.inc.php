@@ -9,7 +9,7 @@ $email = $_POST['mail'];
 $password = $_POST['pwd'];
 $passwordRepeat = $_POST['pwd-repeat'];
 
-if(empty($username) || empty($email) || empty($password) || $passwordRepeat) {
+if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
 header("Location: ../signup.php?error=emptyFields&uid=".$username."&mail=".$email);
 exit();
 }
@@ -60,6 +60,7 @@ else {
             }
 
             else {
+
                 $hashpwd = password_hash($password, PASSWORD_DEFAULT);
 
                 mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashpwd);
