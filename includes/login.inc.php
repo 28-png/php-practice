@@ -26,7 +26,10 @@ if(isset($_POST['login-submit'])) {
     $result = mysqli_stmt_get_result($stmt);
 
     if($row = mysqli_fetch_row()) {
+    $pwdCheck = password_verify($password, $row['pwdUsers']);
+    if($pwdCheck == false) {
 
+    }
     }
 
     else {
