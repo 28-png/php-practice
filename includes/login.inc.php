@@ -38,7 +38,8 @@ if(isset($_POST['login-submit'])) {
     }
 
     else{
-
+        header("Location: ../index.php?error=wrongpwd");
+        exit();
 
     }
 
