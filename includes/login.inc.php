@@ -28,8 +28,15 @@ if(isset($_POST['login-submit'])) {
     if($row = mysqli_fetch_row()) {
     $pwdCheck = password_verify($password, $row['pwdUsers']);
     if($pwdCheck == false) {
+        header("Location: ../index.php?error=wrongpwd");
+        exit();
+    }
+
+    else {
+
 
     }
+
     }
 
     else {
