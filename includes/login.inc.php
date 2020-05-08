@@ -33,7 +33,8 @@ if(isset($_POST['login-submit'])) {
     }
 
     else if($pwdCheck == true) {
-
+    session_start();
+    $_SESSION['userId'] = $row['idUsers'];
 
     }
 
