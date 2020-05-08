@@ -32,7 +32,12 @@ if(isset($_POST['login-submit'])) {
         exit();
     }
 
-    else {
+    else if($pwdCheck == true) {
+
+
+    }
+
+    else{
 
 
     }
