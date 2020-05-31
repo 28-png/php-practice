@@ -13,7 +13,6 @@ require "header.php";
     }
     ?>
 
-
 </main>
 
 <?php
